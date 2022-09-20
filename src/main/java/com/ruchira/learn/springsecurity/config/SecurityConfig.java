@@ -24,6 +24,7 @@ public class SecurityConfig {
 		.authorizeHttpRequests(
 				(authz) -> authz
 				.antMatchers("/secured.html").authenticated()
+				.antMatchers("/userRole.html").hasAuthority("User")
 				.anyRequest().permitAll()
 					)
 		.httpBasic();
