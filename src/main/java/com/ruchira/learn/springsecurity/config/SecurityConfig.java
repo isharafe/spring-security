@@ -13,7 +13,9 @@ public class SecurityConfig {
 		http
 		.authorizeHttpRequests(
 				(authz) -> authz.anyRequest()
-					.authenticated())
+					.authenticated().antMatchers("/secured.html")
+					.permitAll()
+					)
 		.httpBasic();
 		return http.build();
 	}
