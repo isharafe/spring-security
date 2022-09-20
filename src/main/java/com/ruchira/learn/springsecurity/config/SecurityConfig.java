@@ -12,9 +12,9 @@ public class SecurityConfig {
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		http
 		.authorizeHttpRequests(
-				(authz) -> authz.anyRequest()
-					.authenticated().antMatchers("/secured.html")
-					.permitAll()
+				(authz) -> authz
+				.antMatchers("/secured.html").authenticated()
+				.anyRequest().permitAll()
 					)
 		.httpBasic();
 		return http.build();
