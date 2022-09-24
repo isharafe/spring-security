@@ -13,4 +13,4 @@
   - [SecurityConfig](https://github.com/isharafe/spring-security/blob/authorization/src/main/java/com/ruchira/learn/springsecurity/config/SecurityConfig.java)
     - This class is used to tell spring how we want it to secure our application
     - Ex: If user needs to access the url "/abcd", he should have a "xyz" role
-    - Early days most common way to create this config class was to extend **WebSecurityConfigureradapter**. But in recent spring releases, this class is deprecated. Instead they suggest [other ways to do this(https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter)
+    - Early days most common way to create this config class was to extend **WebSecurityConfigureradapter**. But in recent spring releases, this class is deprecated. Instead they suggest [other ways to do this](https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter)
