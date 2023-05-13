@@ -14,9 +14,10 @@ public class Security {
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		return http.authorizeHttpRequests(customizer ->
-			customizer.anyRequest().permitAll()
+			customizer.anyRequest().authenticated()
 		)
-		.formLogin(Customizer.withDefaults())
+		.oauth2Login(Customizer.withDefaults())
 		.build();
 	}
+
 }

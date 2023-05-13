@@ -12,3 +12,18 @@ spring:
       hibernate:
          ddl-auto: update
       database-platform: org.hibernate.dialect.MySQL5Dialect
+
+   security:
+      oauth2:
+         client:
+            registration:
+               google:
+                  clientId: ${GOOGLE_APP_CLIENT_ID}
+                  clientSecret: ${GOOGLE_APP_CLIENT_SECRET}
+                  scope:
+                     - email
+                     - profile
+                     - openid
+
+   config:
+      import: optional:file:.env[.properties]
