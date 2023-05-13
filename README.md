@@ -11,3 +11,4 @@ a place to test different auth systems in spring security
 * jwt - [use jwt for authentication](https://github.com/isharafe/spring-security/blob/jwt/README.md)
 * ldap - [Use ldap - Lightweight Directory Access Protocol for authentication](https://github.com/isharafe/spring-security/blob/ldap/README.md)
   * Still developing
+* oidc - [Use OAuth2 - OIDC to authenticate with google](https://github.com/isharafe/spring-security/blob/oidc/README.md)
