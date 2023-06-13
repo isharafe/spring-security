@@ -1,4 +1,5 @@
 # Getting Started
+* Use google as an identity provider and implement single sign on (SSO) using oauth2, oidc
 
 ## Create a google application
 
